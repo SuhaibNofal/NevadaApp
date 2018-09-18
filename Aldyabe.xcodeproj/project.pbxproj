@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2580282D1397957745B53F61 /* Pods_Aldyabe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9243FD17C1F2CDE02BBA459B /* Pods_Aldyabe.framework */; };
+		682717AD21240B79006EB22F /* FollowOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717AC21240B79006EB22F /* FollowOrderViewController.swift */; };
+		682717AF21241021006EB22F /* TableFollowOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717AE21241021006EB22F /* TableFollowOrder.swift */; };
+		682717B1212411D1006EB22F /* TableFollowOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717B0212411D1006EB22F /* TableFollowOrderCell.swift */; };
+		682717B621253F46006EB22F /* Driver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682717B521253F46006EB22F /* Driver.storyboard */; };
+		682717B821256E6E006EB22F /* DriverDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717B721256E6E006EB22F /* DriverDrawerViewController.swift */; };
+		682717BA21256EC9006EB22F /* MainDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717B921256EC9006EB22F /* MainDriverViewController.swift */; };
+		682717BC21257C2D006EB22F /* DailyTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717BB21257C2D006EB22F /* DailyTransactionViewController.swift */; };
+		682717BE21257DEA006EB22F /* RatingReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717BD21257DEA006EB22F /* RatingReportViewController.swift */; };
+		682717C021257EB5006EB22F /* TableRatingReportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717BF21257EB5006EB22F /* TableRatingReportCell.swift */; };
+		682717C221257F3E006EB22F /* TableRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717C121257F3E006EB22F /* TableRating.swift */; };
+		682717C421258089006EB22F /* PoupTableRatingReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717C321258089006EB22F /* PoupTableRatingReportViewController.swift */; };
+		682717C6212581D0006EB22F /* PopupTableRatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717C5212581D0006EB22F /* PopupTableRatingCell.swift */; };
+		682717C821259E60006EB22F /* LastTransActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717C721259E60006EB22F /* LastTransActionViewController.swift */; };
+		682717CA21259ED6006EB22F /* TableLastTransCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717C921259ED6006EB22F /* TableLastTransCell.swift */; };
+		682717CE21294701006EB22F /* ImportantLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717CD21294700006EB22F /* ImportantLocationViewController.swift */; };
+		682717D021294C87006EB22F /* NetWorkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682717CF21294C87006EB22F /* NetWorkServices.swift */; };
+		68362BA521303314002F97BF /* suhaib.xml in Resources */ = {isa = PBXBuildFile; fileRef = 68362BA421303314002F97BF /* suhaib.xml */; };
+		684AA8212133EBBD000B01CB /* arrayAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684AA8202133EBBD000B01CB /* arrayAdmin.swift */; };
+		684EEF152122B263000DB9D4 /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF142122B263000DB9D4 /* NewOrderViewController.swift */; };
+		684EEF172122B2B1000DB9D4 /* ImageGradint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF162122B2B1000DB9D4 /* ImageGradint.swift */; };
+		684EEF192122B700000DB9D4 /* MainTableControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF182122B700000DB9D4 /* MainTableControllerAdmin.swift */; };
+		684EEF1B2122BD76000DB9D4 /* MainAdminCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF1A2122BD76000DB9D4 /* MainAdminCell.swift */; };
+		684EEF1D2122C09F000DB9D4 /* AdminDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF1C2122C09F000DB9D4 /* AdminDrawerViewController.swift */; };
+		684EEF1F2122C1D9000DB9D4 /* AdminDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF1E2122C1D9000DB9D4 /* AdminDrawer.swift */; };
+		684EEF212122C283000DB9D4 /* AdminDrawerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF202122C283000DB9D4 /* AdminDrawerCell.swift */; };
+		684EEF232122DF8A000DB9D4 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF222122DF8A000DB9D4 /* DatePopupViewController.swift */; };
+		684EEF252122FB37000DB9D4 /* NewOrderDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF242122FB37000DB9D4 /* NewOrderDropDown.swift */; };
+		684EEF272122FC00000DB9D4 /* NewOrderDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EEF262122FC00000DB9D4 /* NewOrderDropDownCell.swift */; };
+		686DBE1521411D3200027DEF /* subAccountTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE1421411D3200027DEF /* subAccountTypeCell.swift */; };
+		686DBE172144ED0200027DEF /* CustomerInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE162144ED0200027DEF /* CustomerInformationViewController.swift */; };
+		686DBE19214638E200027DEF /* Child_CustomerInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE18214638E200027DEF /* Child_CustomerInformation.swift */; };
+		686DBE1B21463BAA00027DEF /* Child2_AccontInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE1A21463BAA00027DEF /* Child2_AccontInformationVC.swift */; };
+		686DBE1D21463CDD00027DEF /* Child3_DeletionInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE1C21463CDD00027DEF /* Child3_DeletionInformationVC.swift */; };
+		686DBE44214F71EC00027DEF /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686DBE43214F71EC00027DEF /* ContainerViewController.swift */; };
+		6873DE0B2121B1F7003509F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6873DE0A2121B1F7003509F3 /* AppDelegate.swift */; };
+		6873DE0D2121B1F7003509F3 /* MainControllerAdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6873DE0C2121B1F7003509F3 /* MainControllerAdminVC.swift */; };
+		6873DE102121B1F7003509F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6873DE0E2121B1F7003509F3 /* Main.storyboard */; };
+		6873DE122121B1F7003509F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6873DE112121B1F7003509F3 /* Assets.xcassets */; };
+		6873DE152121B1F7003509F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6873DE132121B1F7003509F3 /* LaunchScreen.storyboard */; };
+		6873DE262121BE8D003509F3 /* LogINVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6873DE252121BE8D003509F3 /* LogINVC.swift */; };
+		6873DE302122A46C003509F3 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6873DE2F2122A46C003509F3 /* DatePopupViewController.storyboard */; };
+		6873DE342122AC4C003509F3 /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6873DE332122AC4C003509F3 /* Customer.storyboard */; };
+		6873DE362122AE54003509F3 /* MainCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6873DE352122AE54003509F3 /* MainCustomerViewController.swift */; };
+		68A5AE732137EB9700F40E61 /* SendSmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5AE722137EB9700F40E61 /* SendSmsViewController.swift */; };
+		68A5AE75213D078000F40E61 /* PopNotesRatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5AE74213D078000F40E61 /* PopNotesRatingVC.swift */; };
+		68A5AE79213D36B100F40E61 /* AccountSubActivityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5AE78213D36B100F40E61 /* AccountSubActivityVC.swift */; };
+		68A5AE7B213E755400F40E61 /* SubAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5AE7A213E755400F40E61 /* SubAccount.swift */; };
+		68A5AE7D213E7E5400F40E61 /* AccountSubCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5AE7C213E7E5400F40E61 /* AccountSubCellTableViewCell.swift */; };
+		68D14BF02135286200D6B73A /* LastTransActionParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D14BEF2135286200D6B73A /* LastTransActionParameter.swift */; };
+		68D14BF22136875200D6B73A /* DailyTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D14BF12136875200D6B73A /* DailyTrans.swift */; };
+		68D14BF421368EAF00D6B73A /* DailyTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D14BF321368EAF00D6B73A /* DailyTableCellTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05C02910704AA181BC5EB245 /* Pods-Aldyabe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aldyabe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe.release.xcconfig"; sourceTree = "<group>"; };
+		37D4B0057C291383EF516CA1 /* Pods-Aldyabe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aldyabe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe.debug.xcconfig"; sourceTree = "<group>"; };
+		682717AC21240B79006EB22F /* FollowOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowOrderViewController.swift; sourceTree = "<group>"; };
+		682717AE21241021006EB22F /* TableFollowOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFollowOrder.swift; sourceTree = "<group>"; };
+		682717B0212411D1006EB22F /* TableFollowOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFollowOrderCell.swift; sourceTree = "<group>"; };
+		682717B521253F46006EB22F /* Driver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Driver.storyboard; sourceTree = "<group>"; };
+		682717B721256E6E006EB22F /* DriverDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDrawerViewController.swift; sourceTree = "<group>"; };
+		682717B921256EC9006EB22F /* MainDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDriverViewController.swift; sourceTree = "<group>"; };
+		682717BB21257C2D006EB22F /* DailyTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTransactionViewController.swift; sourceTree = "<group>"; };
+		682717BD21257DEA006EB22F /* RatingReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingReportViewController.swift; sourceTree = "<group>"; };
+		682717BF21257EB5006EB22F /* TableRatingReportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRatingReportCell.swift; sourceTree = "<group>"; };
+		682717C121257F3E006EB22F /* TableRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRating.swift; sourceTree = "<group>"; };
+		682717C321258089006EB22F /* PoupTableRatingReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoupTableRatingReportViewController.swift; sourceTree = "<group>"; };
+		682717C5212581D0006EB22F /* PopupTableRatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupTableRatingCell.swift; sourceTree = "<group>"; };
+		682717C721259E60006EB22F /* LastTransActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTransActionViewController.swift; sourceTree = "<group>"; };
+		682717C921259ED6006EB22F /* TableLastTransCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLastTransCell.swift; sourceTree = "<group>"; };
+		682717CD21294700006EB22F /* ImportantLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantLocationViewController.swift; sourceTree = "<group>"; };
+		682717CF21294C87006EB22F /* NetWorkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkServices.swift; sourceTree = "<group>"; };
+		68362BA421303314002F97BF /* suhaib.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = suhaib.xml; sourceTree = "<group>"; };
+		684AA8202133EBBD000B01CB /* arrayAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arrayAdmin.swift; sourceTree = "<group>"; };
+		684EEF142122B263000DB9D4 /* NewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
+		684EEF162122B2B1000DB9D4 /* ImageGradint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGradint.swift; sourceTree = "<group>"; };
+		684EEF182122B700000DB9D4 /* MainTableControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableControllerAdmin.swift; sourceTree = "<group>"; };
+		684EEF1A2122BD76000DB9D4 /* MainAdminCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAdminCell.swift; sourceTree = "<group>"; };
+		684EEF1C2122C09F000DB9D4 /* AdminDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDrawerViewController.swift; sourceTree = "<group>"; };
+		684EEF1E2122C1D9000DB9D4 /* AdminDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDrawer.swift; sourceTree = "<group>"; };
+		684EEF202122C283000DB9D4 /* AdminDrawerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDrawerCell.swift; sourceTree = "<group>"; };
+		684EEF222122DF8A000DB9D4 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
+		684EEF242122FB37000DB9D4 /* NewOrderDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderDropDown.swift; sourceTree = "<group>"; };
+		684EEF262122FC00000DB9D4 /* NewOrderDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderDropDownCell.swift; sourceTree = "<group>"; };
+		686DBE1421411D3200027DEF /* subAccountTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subAccountTypeCell.swift; sourceTree = "<group>"; };
+		686DBE162144ED0200027DEF /* CustomerInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInformationViewController.swift; sourceTree = "<group>"; };
+		686DBE18214638E200027DEF /* Child_CustomerInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child_CustomerInformation.swift; sourceTree = "<group>"; };
+		686DBE1A21463BAA00027DEF /* Child2_AccontInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child2_AccontInformationVC.swift; sourceTree = "<group>"; };
+		686DBE1C21463CDD00027DEF /* Child3_DeletionInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child3_DeletionInformationVC.swift; sourceTree = "<group>"; };
+		686DBE43214F71EC00027DEF /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		6873DE072121B1F7003509F3 /* Aldyabe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aldyabe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6873DE0A2121B1F7003509F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6873DE0C2121B1F7003509F3 /* MainControllerAdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainControllerAdminVC.swift; sourceTree = "<group>"; };
+		6873DE0F2121B1F7003509F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6873DE112121B1F7003509F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6873DE142121B1F7003509F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6873DE162121B1F7003509F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6873DE252121BE8D003509F3 /* LogINVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogINVC.swift; sourceTree = "<group>"; };
+		6873DE2F2122A46C003509F3 /* DatePopupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePopupViewController.storyboard; sourceTree = "<group>"; };
+		6873DE332122AC4C003509F3 /* Customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
+		6873DE352122AE54003509F3 /* MainCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCustomerViewController.swift; sourceTree = "<group>"; };
+		68A5AE722137EB9700F40E61 /* SendSmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSmsViewController.swift; sourceTree = "<group>"; };
+		68A5AE74213D078000F40E61 /* PopNotesRatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopNotesRatingVC.swift; sourceTree = "<group>"; };
+		68A5AE78213D36B100F40E61 /* AccountSubActivityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSubActivityVC.swift; sourceTree = "<group>"; };
+		68A5AE7A213E755400F40E61 /* SubAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubAccount.swift; sourceTree = "<group>"; };
+		68A5AE7C213E7E5400F40E61 /* AccountSubCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSubCellTableViewCell.swift; sourceTree = "<group>"; };
+		68D14BEF2135286200D6B73A /* LastTransActionParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTransActionParameter.swift; sourceTree = "<group>"; };
+		68D14BF12136875200D6B73A /* DailyTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTrans.swift; sourceTree = "<group>"; };
+		68D14BF321368EAF00D6B73A /* DailyTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		9243FD17C1F2CDE02BBA459B /* Pods_Aldyabe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aldyabe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6873DE042121B1F7003509F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2580282D1397957745B53F61 /* Pods_Aldyabe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A788EF55C074B52343976A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37D4B0057C291383EF516CA1 /* Pods-Aldyabe.debug.xcconfig */,
+				05C02910704AA181BC5EB245 /* Pods-Aldyabe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3547FC81E99DB31348C9F34A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9243FD17C1F2CDE02BBA459B /* Pods_Aldyabe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6873DDFE2121B1F7003509F3 = {
+			isa = PBXGroup;
+			children = (
+				6873DE092121B1F7003509F3 /* Aldyabe */,
+				6873DE082121B1F7003509F3 /* Products */,
+				11A788EF55C074B52343976A /* Pods */,
+				3547FC81E99DB31348C9F34A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6873DE082121B1F7003509F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE072121B1F7003509F3 /* Aldyabe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6873DE092121B1F7003509F3 /* Aldyabe */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE1C2121B1FF003509F3 /* Globel */,
+				6873DE1D2121B20B003509F3 /* Post */,
+				6873DE162121B1F7003509F3 /* Info.plist */,
+				68362BA421303314002F97BF /* suhaib.xml */,
+			);
+			path = Aldyabe;
+			sourceTree = "<group>";
+		};
+		6873DE1C2121B1FF003509F3 /* Globel */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE242121B6B3003509F3 /* View */,
+				6873DE232121B6B1003509F3 /* Controller */,
+				6873DE222121B6AD003509F3 /* Services */,
+			);
+			path = Globel;
+			sourceTree = "<group>";
+		};
+		6873DE1D2121B20B003509F3 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE212121B68B003509F3 /* Services */,
+				6873DE202121B682003509F3 /* Controller */,
+				6873DE1F2121B67B003509F3 /* View */,
+				6873DE1E2121B672003509F3 /* Module */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		6873DE1E2121B672003509F3 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				684EEF162122B2B1000DB9D4 /* ImageGradint.swift */,
+				684EEF182122B700000DB9D4 /* MainTableControllerAdmin.swift */,
+				684EEF1E2122C1D9000DB9D4 /* AdminDrawer.swift */,
+				684EEF242122FB37000DB9D4 /* NewOrderDropDown.swift */,
+				682717AE21241021006EB22F /* TableFollowOrder.swift */,
+				682717C121257F3E006EB22F /* TableRating.swift */,
+				684AA8202133EBBD000B01CB /* arrayAdmin.swift */,
+				68D14BEF2135286200D6B73A /* LastTransActionParameter.swift */,
+				68D14BF12136875200D6B73A /* DailyTrans.swift */,
+				68A5AE7A213E755400F40E61 /* SubAccount.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		6873DE1F2121B67B003509F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE0E2121B1F7003509F3 /* Main.storyboard */,
+				6873DE2F2122A46C003509F3 /* DatePopupViewController.storyboard */,
+				6873DE332122AC4C003509F3 /* Customer.storyboard */,
+				682717B521253F46006EB22F /* Driver.storyboard */,
+				684EEF1A2122BD76000DB9D4 /* MainAdminCell.swift */,
+				684EEF202122C283000DB9D4 /* AdminDrawerCell.swift */,
+				684EEF262122FC00000DB9D4 /* NewOrderDropDownCell.swift */,
+				682717B0212411D1006EB22F /* TableFollowOrderCell.swift */,
+				682717BF21257EB5006EB22F /* TableRatingReportCell.swift */,
+				682717C5212581D0006EB22F /* PopupTableRatingCell.swift */,
+				682717C921259ED6006EB22F /* TableLastTransCell.swift */,
+				68D14BF321368EAF00D6B73A /* DailyTableCellTableViewCell.swift */,
+				68A5AE7C213E7E5400F40E61 /* AccountSubCellTableViewCell.swift */,
+				686DBE1421411D3200027DEF /* subAccountTypeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6873DE202121B682003509F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE0C2121B1F7003509F3 /* MainControllerAdminVC.swift */,
+				6873DE252121BE8D003509F3 /* LogINVC.swift */,
+				6873DE352122AE54003509F3 /* MainCustomerViewController.swift */,
+				684EEF142122B263000DB9D4 /* NewOrderViewController.swift */,
+				684EEF1C2122C09F000DB9D4 /* AdminDrawerViewController.swift */,
+				684EEF222122DF8A000DB9D4 /* DatePopupViewController.swift */,
+				682717AC21240B79006EB22F /* FollowOrderViewController.swift */,
+				682717B721256E6E006EB22F /* DriverDrawerViewController.swift */,
+				682717B921256EC9006EB22F /* MainDriverViewController.swift */,
+				682717BB21257C2D006EB22F /* DailyTransactionViewController.swift */,
+				682717BD21257DEA006EB22F /* RatingReportViewController.swift */,
+				682717C321258089006EB22F /* PoupTableRatingReportViewController.swift */,
+				682717C721259E60006EB22F /* LastTransActionViewController.swift */,
+				682717CD21294700006EB22F /* ImportantLocationViewController.swift */,
+				68A5AE722137EB9700F40E61 /* SendSmsViewController.swift */,
+				68A5AE74213D078000F40E61 /* PopNotesRatingVC.swift */,
+				68A5AE78213D36B100F40E61 /* AccountSubActivityVC.swift */,
+				686DBE162144ED0200027DEF /* CustomerInformationViewController.swift */,
+				686DBE18214638E200027DEF /* Child_CustomerInformation.swift */,
+				686DBE1A21463BAA00027DEF /* Child2_AccontInformationVC.swift */,
+				686DBE1C21463CDD00027DEF /* Child3_DeletionInformationVC.swift */,
+				686DBE43214F71EC00027DEF /* ContainerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6873DE212121B68B003509F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6873DE222121B6AD003509F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				682717CF21294C87006EB22F /* NetWorkServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6873DE232121B6B1003509F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE0A2121B1F7003509F3 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6873DE242121B6B3003509F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6873DE132121B1F7003509F3 /* LaunchScreen.storyboard */,
+				6873DE112121B1F7003509F3 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6873DE062121B1F7003509F3 /* Aldyabe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6873DE192121B1F7003509F3 /* Build configuration list for PBXNativeTarget "Aldyabe" */;
+			buildPhases = (
+				3ACF026A00862BBB2B15EAA4 /* [CP] Check Pods Manifest.lock */,
+				6873DE032121B1F7003509F3 /* Sources */,
+				6873DE042121B1F7003509F3 /* Frameworks */,
+				6873DE052121B1F7003509F3 /* Resources */,
+				44E99AA3C7BED66202DB1367 /* [CP] Embed Pods Frameworks */,
+				4A9E8954E85E576AF7026327 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aldyabe;
+			productName = Aldyabe;
+			productReference = 6873DE072121B1F7003509F3 /* Aldyabe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6873DDFF2121B1F7003509F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Nofal;
+				TargetAttributes = {
+					6873DE062121B1F7003509F3 = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6873DE022121B1F7003509F3 /* Build configuration list for PBXProject "Aldyabe" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6873DDFE2121B1F7003509F3;
+			productRefGroup = 6873DE082121B1F7003509F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6873DE062121B1F7003509F3 /* Aldyabe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6873DE052121B1F7003509F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6873DE342122AC4C003509F3 /* Customer.storyboard in Resources */,
+				6873DE152121B1F7003509F3 /* LaunchScreen.storyboard in Resources */,
+				6873DE122121B1F7003509F3 /* Assets.xcassets in Resources */,
+				68362BA521303314002F97BF /* suhaib.xml in Resources */,
+				6873DE302122A46C003509F3 /* DatePopupViewController.storyboard in Resources */,
+				6873DE102121B1F7003509F3 /* Main.storyboard in Resources */,
+				682717B621253F46006EB22F /* Driver.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ACF026A00862BBB2B15EAA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aldyabe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44E99AA3C7BED66202DB1367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9E8954E85E576AF7026327 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aldyabe/Pods-Aldyabe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6873DE032121B1F7003509F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682717CE21294701006EB22F /* ImportantLocationViewController.swift in Sources */,
+				684EEF172122B2B1000DB9D4 /* ImageGradint.swift in Sources */,
+				682717AD21240B79006EB22F /* FollowOrderViewController.swift in Sources */,
+				682717B821256E6E006EB22F /* DriverDrawerViewController.swift in Sources */,
+				686DBE1521411D3200027DEF /* subAccountTypeCell.swift in Sources */,
+				68A5AE79213D36B100F40E61 /* AccountSubActivityVC.swift in Sources */,
+				682717C021257EB5006EB22F /* TableRatingReportCell.swift in Sources */,
+				682717BC21257C2D006EB22F /* DailyTransactionViewController.swift in Sources */,
+				68D14BF421368EAF00D6B73A /* DailyTableCellTableViewCell.swift in Sources */,
+				684AA8212133EBBD000B01CB /* arrayAdmin.swift in Sources */,
+				684EEF252122FB37000DB9D4 /* NewOrderDropDown.swift in Sources */,
+				684EEF192122B700000DB9D4 /* MainTableControllerAdmin.swift in Sources */,
+				686DBE1B21463BAA00027DEF /* Child2_AccontInformationVC.swift in Sources */,
+				6873DE0D2121B1F7003509F3 /* MainControllerAdminVC.swift in Sources */,
+				686DBE44214F71EC00027DEF /* ContainerViewController.swift in Sources */,
+				682717C421258089006EB22F /* PoupTableRatingReportViewController.swift in Sources */,
+				6873DE0B2121B1F7003509F3 /* AppDelegate.swift in Sources */,
+				684EEF1F2122C1D9000DB9D4 /* AdminDrawer.swift in Sources */,
+				684EEF232122DF8A000DB9D4 /* DatePopupViewController.swift in Sources */,
+				686DBE172144ED0200027DEF /* CustomerInformationViewController.swift in Sources */,
+				682717AF21241021006EB22F /* TableFollowOrder.swift in Sources */,
+				682717BE21257DEA006EB22F /* RatingReportViewController.swift in Sources */,
+				68A5AE7B213E755400F40E61 /* SubAccount.swift in Sources */,
+				682717CA21259ED6006EB22F /* TableLastTransCell.swift in Sources */,
+				682717B1212411D1006EB22F /* TableFollowOrderCell.swift in Sources */,
+				684EEF212122C283000DB9D4 /* AdminDrawerCell.swift in Sources */,
+				682717D021294C87006EB22F /* NetWorkServices.swift in Sources */,
+				68D14BF02135286200D6B73A /* LastTransActionParameter.swift in Sources */,
+				684EEF1B2122BD76000DB9D4 /* MainAdminCell.swift in Sources */,
+				68D14BF22136875200D6B73A /* DailyTrans.swift in Sources */,
+				686DBE1D21463CDD00027DEF /* Child3_DeletionInformationVC.swift in Sources */,
+				6873DE362122AE54003509F3 /* MainCustomerViewController.swift in Sources */,
+				68A5AE732137EB9700F40E61 /* SendSmsViewController.swift in Sources */,
+				68A5AE75213D078000F40E61 /* PopNotesRatingVC.swift in Sources */,
+				682717BA21256EC9006EB22F /* MainDriverViewController.swift in Sources */,
+				68A5AE7D213E7E5400F40E61 /* AccountSubCellTableViewCell.swift in Sources */,
+				684EEF272122FC00000DB9D4 /* NewOrderDropDownCell.swift in Sources */,
+				6873DE262121BE8D003509F3 /* LogINVC.swift in Sources */,
+				682717C821259E60006EB22F /* LastTransActionViewController.swift in Sources */,
+				682717C6212581D0006EB22F /* PopupTableRatingCell.swift in Sources */,
+				684EEF1D2122C09F000DB9D4 /* AdminDrawerViewController.swift in Sources */,
+				682717C221257F3E006EB22F /* TableRating.swift in Sources */,
+				684EEF152122B263000DB9D4 /* NewOrderViewController.swift in Sources */,
+				686DBE19214638E200027DEF /* Child_CustomerInformation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6873DE0E2121B1F7003509F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6873DE0F2121B1F7003509F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6873DE132121B1F7003509F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6873DE142121B1F7003509F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6873DE172121B1F7003509F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6873DE182121B1F7003509F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6873DE1A2121B1F7003509F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37D4B0057C291383EF516CA1 /* Pods-Aldyabe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVX5XZJA4L;
+				INFOPLIST_FILE = Aldyabe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jo.Aldyabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aldyabe/Aldyabe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6873DE1B2121B1F7003509F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C02910704AA181BC5EB245 /* Pods-Aldyabe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVX5XZJA4L;
+				INFOPLIST_FILE = Aldyabe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jo.Aldyabe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aldyabe/Aldyabe-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6873DE022121B1F7003509F3 /* Build configuration list for PBXProject "Aldyabe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6873DE172121B1F7003509F3 /* Debug */,
+				6873DE182121B1F7003509F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6873DE192121B1F7003509F3 /* Build configuration list for PBXNativeTarget "Aldyabe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6873DE1A2121B1F7003509F3 /* Debug */,
+				6873DE1B2121B1F7003509F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6873DDFF2121B1F7003509F3 /* Project object */;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mRL-Nt-x9c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Popup View Controller-->
+        <scene sceneID="Ngr-Y2-7F9">
+            <objects>
+                <viewController storyboardIdentifier="DatePopupViewController" modalPresentationStyle="overCurrentContext" id="mRL-Nt-x9c" customClass="DatePopupViewController" customModule="Aldyabe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pqK-cc-KyF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIf-I5-RBv">
+                                <rect key="frame" x="29" y="185" width="317" height="317"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختار التاريخ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9n-7j-w4L">
+                                        <rect key="frame" x="1" y="0.0" width="316.5" height="44.5"/>
+                                        <color key="backgroundColor" red="0.9259795368" green="0.18263387280000001" blue="0.2914569051" alpha="0.78329837329999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="a8y-e1-qIk">
+                                        <rect key="frame" x="0.0" y="60.5" width="317" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="554802838.97916603">
+                                            <!--2018-08-01 07:53:58 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="ar_SA"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dk-4l-2jz">
+                                        <rect key="frame" x="0.0" y="287" width="317" height="30"/>
+                                        <color key="backgroundColor" red="0.62647783759999998" green="0.13102653619999999" blue="0.26988551020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="حفظ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SaveDate_dismissPop:" destination="mRL-Nt-x9c" eventType="touchUpInside" id="05l-19-bqW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="a8y-e1-qIk" secondAttribute="trailing" id="1Bp-sP-p6i"/>
+                                    <constraint firstItem="8dk-4l-2jz" firstAttribute="leading" secondItem="OIf-I5-RBv" secondAttribute="leading" id="5PP-lC-e30"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c9n-7j-w4L" secondAttribute="trailing" id="7Bt-8n-Ckm"/>
+                                    <constraint firstItem="c9n-7j-w4L" firstAttribute="height" secondItem="OIf-I5-RBv" secondAttribute="height" multiplier="50:350" id="ESs-LZ-qgC"/>
+                                    <constraint firstItem="c9n-7j-w4L" firstAttribute="top" secondItem="OIf-I5-RBv" secondAttribute="top" id="G0q-QW-6nS"/>
+                                    <constraint firstItem="a8y-e1-qIk" firstAttribute="top" secondItem="c9n-7j-w4L" secondAttribute="bottom" constant="16" id="Gzb-cz-F2J"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dk-4l-2jz" secondAttribute="trailing" id="J66-Kl-vWJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dk-4l-2jz" secondAttribute="bottom" id="RCn-IO-SvT"/>
+                                    <constraint firstItem="c9n-7j-w4L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OIf-I5-RBv" secondAttribute="leading" id="Xpv-w9-NdQ"/>
+                                    <constraint firstItem="8dk-4l-2jz" firstAttribute="width" secondItem="OIf-I5-RBv" secondAttribute="width" id="bWO-cF-SRp"/>
+                                    <constraint firstItem="c9n-7j-w4L" firstAttribute="width" secondItem="OIf-I5-RBv" secondAttribute="width" id="j71-7Q-lFn"/>
+                                    <constraint firstItem="a8y-e1-qIk" firstAttribute="leading" secondItem="OIf-I5-RBv" secondAttribute="leading" id="k1w-Ng-TGz"/>
+                                    <constraint firstItem="c9n-7j-w4L" firstAttribute="centerX" secondItem="OIf-I5-RBv" secondAttribute="centerX" id="uD4-pE-TdR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71220653550000002" green="0.71220653550000002" blue="0.71220653550000002" alpha="0.5487746147" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OIf-I5-RBv" firstAttribute="width" secondItem="pqK-cc-KyF" secondAttribute="width" multiplier="350:414" id="HPi-fs-5xc"/>
+                            <constraint firstItem="OIf-I5-RBv" firstAttribute="centerY" secondItem="K42-Mo-vBn" secondAttribute="centerY" id="YCi-r7-pJQ"/>
+                            <constraint firstItem="OIf-I5-RBv" firstAttribute="height" secondItem="pqK-cc-KyF" secondAttribute="height" multiplier="350:736" id="fE6-NQ-cTD"/>
+                            <constraint firstItem="OIf-I5-RBv" firstAttribute="centerX" secondItem="K42-Mo-vBn" secondAttribute="centerX" id="orF-jx-RAM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K42-Mo-vBn"/>
+                    </view>
+                    <connections>
+                        <outlet property="buSaveDate" destination="8dk-4l-2jz" id="OT8-0s-5wa"/>
+                        <outlet property="laSelectDate" destination="c9n-7j-w4L" id="vcO-pI-jsh"/>
+                        <outlet property="pickerview" destination="a8y-e1-qIk" id="Dps-42-ppZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qN-fu-lQp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5100" y="-7861"/>
+        </scene>
+    </scenes>
+</document>

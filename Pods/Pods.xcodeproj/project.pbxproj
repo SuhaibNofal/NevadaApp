@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02784F20EF773ED00E9D706FD11C37D6 /* XLPagerTabStrip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7044B97121FD12E6E88651CE4362C673 /* XLPagerTabStrip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03AD6A1688A8E2B1AE968B53B1E75BA6 /* BaseButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F21662C4DE1E7051B31460E1040935F /* BaseButtonBarPagerTabStripViewController.swift */; };
+		05BB4AABC728ECDE092867C61D6BDA69 /* PagerTabStripError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F6C3EE7800B48D4CDD19CA6D839B5 /* PagerTabStripError.swift */; };
+		05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E9D362AB12209CD6D64256AF1095A /* KYEmbedMainControllerSegue.swift */; };
+		10253D2BBF9E0437D2890F7EF044D5B1 /* ButtonBarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674CB634DD4E9A50236988231930E648 /* ButtonBarPagerTabStripViewController.swift */; };
+		1288E6495DB58FFCAFF04BCD6DF6C02E /* Pods-Aldyabe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6902AB763CF05FCD187C5F581C85D15F /* Pods-Aldyabe-dummy.m */; };
+		1AA6CF53E8E0F8A137EF72C054ABA3FE /* PagerTabStripBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454CDB2D78A7823A69EFBBF3175A7291 /* PagerTabStripBehaviour.swift */; };
+		291F8ADE759B871621C6ED1C9E2904E1 /* Pods-Aldyabe-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B40DF60D72F3E6FB725A5D608246CD /* Pods-Aldyabe-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A796C9F97C43D060029FC58B2C58ABD /* SegmentedPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371EEE2AC4CBBCA0904B00F9DE48AAFE /* SegmentedPagerTabStripViewController.swift */; };
+		2B475FD5B6F1A6AA191F2CBDC60BE749 /* BarPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1E76E4C1DEFE40DF931751179EDDC7 /* BarPagerTabStripViewController.swift */; };
+		3C4AD2167013FE9CAB44A5039EA9280C /* ButtonBarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E791B61A5EDAAB65F6635D2B51CE69 /* ButtonBarViewCell.swift */; };
+		3E354F68292841B649CC49FED7593D04 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03AE2BD78847CBFA17DE447A02A9D29 /* ButtonCell.xib */; };
+		473001B63DA680E56B8F526C3864AB12 /* PagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9288DC1BDB70494A97FE89F5E96928 /* PagerTabStripViewController.swift */; };
+		4EF812B17266B1BE2FA18B3D11733E46 /* ButtonBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0CF2E6E2ADD24BF777B454A8406B93 /* ButtonBarView.swift */; };
+		5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D883CEC39DE0BCE8DD5ACFA0FD6584 /* KYDrawerController-dummy.m */; };
+		62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD1007AFEA9268BB8617E41AEEC6FAAB /* KYDrawerController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6402EFD39FB273F03996E9EF745AD56E /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4328891FD7F22E15364E4306101E0 /* SwipeDirection.swift */; };
+		6AD875BCD993EB7CD3FB369B273FEE4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0502184506A6BC09AAC8CD792C19CB4A /* KYDrawerController.swift */; };
+		8456C94E972077B34C37E47F58122E56 /* TwitterPagerTabStripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC977FECAA73ECCC6BBF4F43BC88B3 /* TwitterPagerTabStripViewController.swift */; };
+		95B7139418ACB0C28CC7A8B02DB0E184 /* ButtonCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = F03AE2BD78847CBFA17DE447A02A9D29 /* ButtonCell.xib */; };
+		AEA3421C1C8E4A409EEFD559354919BD /* IndicatorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCADBBAB21787D60B40B568FCB8B1066 /* IndicatorInfo.swift */; };
+		B629AB38EB0B544C0A6FC4787508E445 /* XLPagerTabStrip.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A323DAEE6DEFA5961D7017287C0FCC6C /* XLPagerTabStrip.bundle */; };
+		B9A94C436FDA858DD7710A15A3E3DC83 /* XLPagerTabStrip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790F0C7A0AD78A3B8CA4243045A8E1A /* XLPagerTabStrip-dummy.m */; };
+		C83D274C481D4D7992C45AEB1191D67B /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E446FE2F34D1E63BF7C1E351F7ECA5 /* BarView.swift */; };
+		D4432EB59A63D49067E2D1ADDB5EEB72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E119D5A968BA5DA7749460E1080619CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E1786327CC0AC1EA976624C021711363 /* FXPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D868DB0FBC8D4CEA2DA3D61458BA440C /* FXPageControl.m */; };
+		E6E027956FB48CD1791E41414B99CDA1 /* FXPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DB0428CF8AB90D155FC1CBC7F80E8B /* FXPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9B01758CA3368A13D35A3963F2B3381 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9077E848E7DFFC1EF5158C0739618054 /* KYEmbedDrawerControllerSegue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70A7342EA0FB0A79F7A272F8870AF06A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1087BC19BD08E294E079A9BFE72DEB72;
+			remoteInfo = "XLPagerTabStrip-XLPagerTabStrip";
+		};
+		9D774CD2A15DD37FD4EC14C351525DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10453384D0215DC77771F0BA7A617A6F;
+			remoteInfo = XLPagerTabStrip;
+		};
+		D76134F5427D12915432D1693D378A8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AF8670FDECF80EFCAA3D04318C4B4D1;
+			remoteInfo = KYDrawerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B40DF60D72F3E6FB725A5D608246CD /* Pods-Aldyabe-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Aldyabe-umbrella.h"; sourceTree = "<group>"; };
+		04816F63D11254C2C2DDAA4DE92C1800 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		0502184506A6BC09AAC8CD792C19CB4A /* KYDrawerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYDrawerController.swift; path = KYDrawerController/Classes/KYDrawerController.swift; sourceTree = "<group>"; };
+		09D883CEC39DE0BCE8DD5ACFA0FD6584 /* KYDrawerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KYDrawerController-dummy.m"; sourceTree = "<group>"; };
+		0A9381777150C0B7E4E64700B19F0622 /* Pods-Aldyabe-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Aldyabe-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1790F0C7A0AD78A3B8CA4243045A8E1A /* XLPagerTabStrip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XLPagerTabStrip-dummy.m"; sourceTree = "<group>"; };
+		28966B45C003E819873968E8DE943F8E /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		2B416ED7052E507C54EA51CB000E9CDD /* KYDrawerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-prefix.pch"; sourceTree = "<group>"; };
+		2D2891326EA6F4FA499E5587951692DC /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		371EEE2AC4CBBCA0904B00F9DE48AAFE /* SegmentedPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedPagerTabStripViewController.swift; path = Sources/SegmentedPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		44A390D99F6335FED9068CDA93414F7A /* Pods-Aldyabe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Aldyabe.modulemap"; sourceTree = "<group>"; };
+		454CDB2D78A7823A69EFBBF3175A7291 /* PagerTabStripBehaviour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripBehaviour.swift; path = Sources/PagerTabStripBehaviour.swift; sourceTree = "<group>"; };
+		4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XLPagerTabStrip.xcconfig; sourceTree = "<group>"; };
+		4C1E76E4C1DEFE40DF931751179EDDC7 /* BarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarPagerTabStripViewController.swift; path = Sources/BarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		4EF290E7825D58328F33FA3B262AEBF4 /* Pods-Aldyabe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aldyabe.debug.xcconfig"; sourceTree = "<group>"; };
+		4F21662C4DE1E7051B31460E1040935F /* BaseButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseButtonBarPagerTabStripViewController.swift; path = Sources/BaseButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		50B4328891FD7F22E15364E4306101E0 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = Sources/SwipeDirection.swift; sourceTree = "<group>"; };
+		520F6C3EE7800B48D4CDD19CA6D839B5 /* PagerTabStripError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripError.swift; path = Sources/PagerTabStripError.swift; sourceTree = "<group>"; };
+		58E791B61A5EDAAB65F6635D2B51CE69 /* ButtonBarViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarViewCell.swift; path = Sources/ButtonBarViewCell.swift; sourceTree = "<group>"; };
+		65D35ED92358D094609EE7B161F1F4A4 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		674CB634DD4E9A50236988231930E648 /* ButtonBarPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarPagerTabStripViewController.swift; path = Sources/ButtonBarPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		67DB0428CF8AB90D155FC1CBC7F80E8B /* FXPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXPageControl.h; path = Sources/FXPageControl.h; sourceTree = "<group>"; };
+		6902AB763CF05FCD187C5F581C85D15F /* Pods-Aldyabe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Aldyabe-dummy.m"; sourceTree = "<group>"; };
+		7044B97121FD12E6E88651CE4362C673 /* XLPagerTabStrip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-umbrella.h"; sourceTree = "<group>"; };
+		70B5824CACEC7236A7FEC82472E5A4A9 /* XLPagerTabStrip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XLPagerTabStrip-prefix.pch"; sourceTree = "<group>"; };
+		728270EB84C481EAAB923DDB2782E9C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0CF2E6E2ADD24BF777B454A8406B93 /* ButtonBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonBarView.swift; path = Sources/ButtonBarView.swift; sourceTree = "<group>"; };
+		7ADECBCBF59067F3E98D45698767EE33 /* KYDrawerController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KYDrawerController.xcconfig; sourceTree = "<group>"; };
+		80F877F182E0638494C16E69DF76991E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D8B3DEEE62ACAB1FAC941AB403C3DDD /* Pods-Aldyabe-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Aldyabe-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D9288DC1BDB70494A97FE89F5E96928 /* PagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagerTabStripViewController.swift; path = Sources/PagerTabStripViewController.swift; sourceTree = "<group>"; };
+		8DAC977FECAA73ECCC6BBF4F43BC88B3 /* TwitterPagerTabStripViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwitterPagerTabStripViewController.swift; path = Sources/TwitterPagerTabStripViewController.swift; sourceTree = "<group>"; };
+		9077E848E7DFFC1EF5158C0739618054 /* KYEmbedDrawerControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedDrawerControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedDrawerControllerSegue.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95D138FE1DF774CD4D62AC939E2002A2 /* KYDrawerController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KYDrawerController.framework; path = KYDrawerController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A323DAEE6DEFA5961D7017287C0FCC6C /* XLPagerTabStrip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = XLPagerTabStrip.bundle; path = "XLPagerTabStrip-XLPagerTabStrip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4E9D362AB12209CD6D64256AF1095A /* KYEmbedMainControllerSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KYEmbedMainControllerSegue.swift; path = KYDrawerController/Classes/KYEmbedMainControllerSegue.swift; sourceTree = "<group>"; };
+		AAA76153104169DEC9C7DED416093670 /* Pods_Aldyabe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Aldyabe.framework; path = "Pods-Aldyabe.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2652452304AFC4F44C2A6F77D1D86E /* Pods-Aldyabe-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aldyabe-resources.sh"; sourceTree = "<group>"; };
+		B21E29E5F403F92F0437284548EAF40C /* ResourceBundle-XLPagerTabStrip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-XLPagerTabStrip-Info.plist"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBACF953AAA91BDD219C6BF7EF735CD1 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XLPagerTabStrip.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCADBBAB21787D60B40B568FCB8B1066 /* IndicatorInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorInfo.swift; path = Sources/IndicatorInfo.swift; sourceTree = "<group>"; };
+		BCE550934378B04BF568B8FF2C1424BD /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		CB40B619CC67865ADA59D67D2DE3B624 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D868DB0FBC8D4CEA2DA3D61458BA440C /* FXPageControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXPageControl.m; path = Sources/FXPageControl.m; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DFC640006139F3E9F5E317990A95D7D7 /* Pods-Aldyabe-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Aldyabe-frameworks.sh"; sourceTree = "<group>"; };
+		E3E446FE2F34D1E63BF7C1E351F7ECA5 /* BarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarView.swift; path = Sources/BarView.swift; sourceTree = "<group>"; };
+		EE3F12D5AE2B9D99F9447B9AEF5AE5B7 /* Pods-Aldyabe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Aldyabe.release.xcconfig"; sourceTree = "<group>"; };
+		EF68680C62F5F2A7B58C717142FD39B5 /* XLPagerTabStrip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XLPagerTabStrip.modulemap; sourceTree = "<group>"; };
+		EF9BBAD3CCBBE69AAF15104D2F93096C /* KYDrawerController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KYDrawerController.modulemap; sourceTree = "<group>"; };
+		F03AE2BD78847CBFA17DE447A02A9D29 /* ButtonCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ButtonCell.xib; path = Sources/ButtonCell.xib; sourceTree = "<group>"; };
+		FA46F89B0E60E359FDEF394BCE9E8D20 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		FD1007AFEA9268BB8617E41AEEC6FAAB /* KYDrawerController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KYDrawerController-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		196B13A51D37407156BA68D8F32670A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4432EB59A63D49067E2D1ADDB5EEB72 /* Foundation.framework in Frameworks */,
+				E9B01758CA3368A13D35A3963F2B3381 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FB1EF2F8A9886B7F0713F557C0356DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD875BCD993EB7CD3FB369B273FEE4B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E1B04E8A750C7D6F4E459C69BB49BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E119D5A968BA5DA7749460E1080619CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBD3264058CA3B7C3502B24FE236850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C6D0ED86CC610BD2150A424A154CC38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		12A563C19BAEF32020A4632F988D41D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28966B45C003E819873968E8DE943F8E /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A7185174E6301FA49F9724E57F4658C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCE550934378B04BF568B8FF2C1424BD /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39A89A9E0B62B04D472BE5978DE34F8E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C956CC5E701026539D65B96CA3D35EC6 /* Frameworks */,
+				12A563C19BAEF32020A4632F988D41D9 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F29E9EA0E2CD5700DF397949A1106B3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2A7185174E6301FA49F9724E57F4658C /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		5D54B402CDF34B81505C7E3DB22472B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				728270EB84C481EAAB923DDB2782E9C1 /* Info.plist */,
+				EF9BBAD3CCBBE69AAF15104D2F93096C /* KYDrawerController.modulemap */,
+				7ADECBCBF59067F3E98D45698767EE33 /* KYDrawerController.xcconfig */,
+				09D883CEC39DE0BCE8DD5ACFA0FD6584 /* KYDrawerController-dummy.m */,
+				2B416ED7052E507C54EA51CB000E9CDD /* KYDrawerController-prefix.pch */,
+				FD1007AFEA9268BB8617E41AEEC6FAAB /* KYDrawerController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KYDrawerController";
+			sourceTree = "<group>";
+		};
+		6CD6CA7E34EDBF35DD8805EEFCB43C6A /* KYDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				0502184506A6BC09AAC8CD792C19CB4A /* KYDrawerController.swift */,
+				9077E848E7DFFC1EF5158C0739618054 /* KYEmbedDrawerControllerSegue.swift */,
+				AA4E9D362AB12209CD6D64256AF1095A /* KYEmbedMainControllerSegue.swift */,
+				5D54B402CDF34B81505C7E3DB22472B0 /* Support Files */,
+			);
+			name = KYDrawerController;
+			path = KYDrawerController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				EFB3357CC204637584648F9998EFA8BE /* Pods */,
+				7E63413A9C3B8C0A0843D4B411AFB90A /* Products */,
+				DB4590AA5487A7FD087644FF00406E6A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E63413A9C3B8C0A0843D4B411AFB90A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95D138FE1DF774CD4D62AC939E2002A2 /* KYDrawerController.framework */,
+				AAA76153104169DEC9C7DED416093670 /* Pods_Aldyabe.framework */,
+				A323DAEE6DEFA5961D7017287C0FCC6C /* XLPagerTabStrip.bundle */,
+				BBACF953AAA91BDD219C6BF7EF735CD1 /* XLPagerTabStrip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B917EF666585678908226CB7130CE7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB40B619CC67865ADA59D67D2DE3B624 /* Info.plist */,
+				B21E29E5F403F92F0437284548EAF40C /* ResourceBundle-XLPagerTabStrip-Info.plist */,
+				EF68680C62F5F2A7B58C717142FD39B5 /* XLPagerTabStrip.modulemap */,
+				4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */,
+				1790F0C7A0AD78A3B8CA4243045A8E1A /* XLPagerTabStrip-dummy.m */,
+				70B5824CACEC7236A7FEC82472E5A4A9 /* XLPagerTabStrip-prefix.pch */,
+				7044B97121FD12E6E88651CE4362C673 /* XLPagerTabStrip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/XLPagerTabStrip";
+			sourceTree = "<group>";
+		};
+		9829026602A1F6798EB6D010BB6D54FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D2891326EA6F4FA499E5587951692DC /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A329B90BE6BBAA72730EFEE0CB86C458 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				4F29E9EA0E2CD5700DF397949A1106B3 /* Base */,
+				39A89A9E0B62B04D472BE5978DE34F8E /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		BD6EF0E21D9F2BD6DC727FC68267F668 /* Pods-Aldyabe */ = {
+			isa = PBXGroup;
+			children = (
+				80F877F182E0638494C16E69DF76991E /* Info.plist */,
+				44A390D99F6335FED9068CDA93414F7A /* Pods-Aldyabe.modulemap */,
+				0A9381777150C0B7E4E64700B19F0622 /* Pods-Aldyabe-acknowledgements.markdown */,
+				8D8B3DEEE62ACAB1FAC941AB403C3DDD /* Pods-Aldyabe-acknowledgements.plist */,
+				6902AB763CF05FCD187C5F581C85D15F /* Pods-Aldyabe-dummy.m */,
+				DFC640006139F3E9F5E317990A95D7D7 /* Pods-Aldyabe-frameworks.sh */,
+				AF2652452304AFC4F44C2A6F77D1D86E /* Pods-Aldyabe-resources.sh */,
+				02B40DF60D72F3E6FB725A5D608246CD /* Pods-Aldyabe-umbrella.h */,
+				4EF290E7825D58328F33FA3B262AEBF4 /* Pods-Aldyabe.debug.xcconfig */,
+				EE3F12D5AE2B9D99F9447B9AEF5AE5B7 /* Pods-Aldyabe.release.xcconfig */,
+			);
+			name = "Pods-Aldyabe";
+			path = "Target Support Files/Pods-Aldyabe";
+			sourceTree = "<group>";
+		};
+		C63E3ECE95158D4186E22255596B5516 /* XLPagerTabStrip */ = {
+			isa = PBXGroup;
+			children = (
+				4C1E76E4C1DEFE40DF931751179EDDC7 /* BarPagerTabStripViewController.swift */,
+				E3E446FE2F34D1E63BF7C1E351F7ECA5 /* BarView.swift */,
+				4F21662C4DE1E7051B31460E1040935F /* BaseButtonBarPagerTabStripViewController.swift */,
+				674CB634DD4E9A50236988231930E648 /* ButtonBarPagerTabStripViewController.swift */,
+				7A0CF2E6E2ADD24BF777B454A8406B93 /* ButtonBarView.swift */,
+				58E791B61A5EDAAB65F6635D2B51CE69 /* ButtonBarViewCell.swift */,
+				F03AE2BD78847CBFA17DE447A02A9D29 /* ButtonCell.xib */,
+				67DB0428CF8AB90D155FC1CBC7F80E8B /* FXPageControl.h */,
+				D868DB0FBC8D4CEA2DA3D61458BA440C /* FXPageControl.m */,
+				BCADBBAB21787D60B40B568FCB8B1066 /* IndicatorInfo.swift */,
+				454CDB2D78A7823A69EFBBF3175A7291 /* PagerTabStripBehaviour.swift */,
+				520F6C3EE7800B48D4CDD19CA6D839B5 /* PagerTabStripError.swift */,
+				8D9288DC1BDB70494A97FE89F5E96928 /* PagerTabStripViewController.swift */,
+				371EEE2AC4CBBCA0904B00F9DE48AAFE /* SegmentedPagerTabStripViewController.swift */,
+				50B4328891FD7F22E15364E4306101E0 /* SwipeDirection.swift */,
+				8DAC977FECAA73ECCC6BBF4F43BC88B3 /* TwitterPagerTabStripViewController.swift */,
+				0C6D0ED86CC610BD2150A424A154CC38 /* Resources */,
+				8B917EF666585678908226CB7130CE7E /* Support Files */,
+			);
+			name = XLPagerTabStrip;
+			path = XLPagerTabStrip;
+			sourceTree = "<group>";
+		};
+		C956CC5E701026539D65B96CA3D35EC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04816F63D11254C2C2DDAA4DE92C1800 /* GoogleMaps.framework */,
+				65D35ED92358D094609EE7B161F1F4A4 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB4590AA5487A7FD087644FF00406E6A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD6EF0E21D9F2BD6DC727FC68267F668 /* Pods-Aldyabe */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E2D856CBC5C3E3A0A93AFE57DABA377A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA46F89B0E60E359FDEF394BCE9E8D20 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFB3357CC204637584648F9998EFA8BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A329B90BE6BBAA72730EFEE0CB86C458 /* GoogleMaps */,
+				FFEBD962C8D6FBB44DCC1F3C895DEE5C /* GooglePlaces */,
+				6CD6CA7E34EDBF35DD8805EEFCB43C6A /* KYDrawerController */,
+				C63E3ECE95158D4186E22255596B5516 /* XLPagerTabStrip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFEBD962C8D6FBB44DCC1F3C895DEE5C /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				E2D856CBC5C3E3A0A93AFE57DABA377A /* Frameworks */,
+				9829026602A1F6798EB6D010BB6D54FF /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		058B4E0BBF3F7DF237D2A3FD7E6548AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				291F8ADE759B871621C6ED1C9E2904E1 /* Pods-Aldyabe-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F522C0522F6102E735FC7B74623D435 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62B449845871F8DA880D40BE4935EC56 /* KYDrawerController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F1B6542F9DCE95B0CA17A897CFEA2A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E027956FB48CD1791E41414B99CDA1 /* FXPageControl.h in Headers */,
+				02784F20EF773ED00E9D706FD11C37D6 /* XLPagerTabStrip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		10453384D0215DC77771F0BA7A617A6F /* XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD841337C35FCD76EB25A02A2C67B84B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */;
+			buildPhases = (
+				447AB90F4841F02D6BD57A489824E3A2 /* Sources */,
+				196B13A51D37407156BA68D8F32670A7 /* Frameworks */,
+				AB260A9ADFE68F6DE33F669D6B577E48 /* Resources */,
+				A6F1B6542F9DCE95B0CA17A897CFEA2A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46756BEC42F3D2D4C718A33CB31B599 /* PBXTargetDependency */,
+			);
+			name = XLPagerTabStrip;
+			productName = XLPagerTabStrip;
+			productReference = BBACF953AAA91BDD219C6BF7EF735CD1 /* XLPagerTabStrip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1087BC19BD08E294E079A9BFE72DEB72 /* XLPagerTabStrip-XLPagerTabStrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 697D3619CF02F3619A527E8C6D934B10 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */;
+			buildPhases = (
+				E2B54DF554084CE36FD97A1D82E85F51 /* Sources */,
+				EEBD3264058CA3B7C3502B24FE236850 /* Frameworks */,
+				78F43F208E1CD8455F82E7F4FA6BA9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			productName = "XLPagerTabStrip-XLPagerTabStrip";
+			productReference = A323DAEE6DEFA5961D7017287C0FCC6C /* XLPagerTabStrip.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235787AAA4D655650FA93DB4FB2D308A /* Build configuration list for PBXNativeTarget "KYDrawerController" */;
+			buildPhases = (
+				1BA042EDEFD683F56F2F5063EC1B98EB /* Sources */,
+				9FB1EF2F8A9886B7F0713F557C0356DF /* Frameworks */,
+				8F522C0522F6102E735FC7B74623D435 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYDrawerController;
+			productName = KYDrawerController;
+			productReference = 95D138FE1DF774CD4D62AC939E2002A2 /* KYDrawerController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F596E25A7916BBDBD8B3EE349FCAFC47 /* Pods-Aldyabe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3CA5854E2D84DA7BED142B966D53BA /* Build configuration list for PBXNativeTarget "Pods-Aldyabe" */;
+			buildPhases = (
+				380033ADB67367A6A3BF8A359EF33B20 /* Sources */,
+				C3E1B04E8A750C7D6F4E459C69BB49BA /* Frameworks */,
+				058B4E0BBF3F7DF237D2A3FD7E6548AE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79602C18AFF36BA0CF7DACFB9CC896D /* PBXTargetDependency */,
+				3FAE6B2D2055BE50A06C38640A0A1067 /* PBXTargetDependency */,
+			);
+			name = "Pods-Aldyabe";
+			productName = "Pods-Aldyabe";
+			productReference = AAA76153104169DEC9C7DED416093670 /* Pods_Aldyabe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7E63413A9C3B8C0A0843D4B411AFB90A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */,
+				F596E25A7916BBDBD8B3EE349FCAFC47 /* Pods-Aldyabe */,
+				10453384D0215DC77771F0BA7A617A6F /* XLPagerTabStrip */,
+				1087BC19BD08E294E079A9BFE72DEB72 /* XLPagerTabStrip-XLPagerTabStrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78F43F208E1CD8455F82E7F4FA6BA9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E354F68292841B649CC49FED7593D04 /* ButtonCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB260A9ADFE68F6DE33F669D6B577E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B629AB38EB0B544C0A6FC4787508E445 /* XLPagerTabStrip.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA042EDEFD683F56F2F5063EC1B98EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC40F18DBFFCACF3FA032B58571B781 /* KYDrawerController-dummy.m in Sources */,
+				74EBEC8F9277C0056FF08F806E75EB4F /* KYDrawerController.swift in Sources */,
+				FE020C0F86B9EBDE87399EC0136682FE /* KYEmbedDrawerControllerSegue.swift in Sources */,
+				05ED5B55D8AAD30623AEB9B36430D576 /* KYEmbedMainControllerSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380033ADB67367A6A3BF8A359EF33B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1288E6495DB58FFCAFF04BCD6DF6C02E /* Pods-Aldyabe-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447AB90F4841F02D6BD57A489824E3A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B475FD5B6F1A6AA191F2CBDC60BE749 /* BarPagerTabStripViewController.swift in Sources */,
+				C83D274C481D4D7992C45AEB1191D67B /* BarView.swift in Sources */,
+				03AD6A1688A8E2B1AE968B53B1E75BA6 /* BaseButtonBarPagerTabStripViewController.swift in Sources */,
+				10253D2BBF9E0437D2890F7EF044D5B1 /* ButtonBarPagerTabStripViewController.swift in Sources */,
+				4EF812B17266B1BE2FA18B3D11733E46 /* ButtonBarView.swift in Sources */,
+				3C4AD2167013FE9CAB44A5039EA9280C /* ButtonBarViewCell.swift in Sources */,
+				95B7139418ACB0C28CC7A8B02DB0E184 /* ButtonCell.xib in Sources */,
+				E1786327CC0AC1EA976624C021711363 /* FXPageControl.m in Sources */,
+				AEA3421C1C8E4A409EEFD559354919BD /* IndicatorInfo.swift in Sources */,
+				1AA6CF53E8E0F8A137EF72C054ABA3FE /* PagerTabStripBehaviour.swift in Sources */,
+				05BB4AABC728ECDE092867C61D6BDA69 /* PagerTabStripError.swift in Sources */,
+				473001B63DA680E56B8F526C3864AB12 /* PagerTabStripViewController.swift in Sources */,
+				2A796C9F97C43D060029FC58B2C58ABD /* SegmentedPagerTabStripViewController.swift in Sources */,
+				6402EFD39FB273F03996E9EF745AD56E /* SwipeDirection.swift in Sources */,
+				8456C94E972077B34C37E47F58122E56 /* TwitterPagerTabStripViewController.swift in Sources */,
+				B9A94C436FDA858DD7710A15A3E3DC83 /* XLPagerTabStrip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2B54DF554084CE36FD97A1D82E85F51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FAE6B2D2055BE50A06C38640A0A1067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLPagerTabStrip;
+			target = 10453384D0215DC77771F0BA7A617A6F /* XLPagerTabStrip */;
+			targetProxy = 9D774CD2A15DD37FD4EC14C351525DB8 /* PBXContainerItemProxy */;
+		};
+		A79602C18AFF36BA0CF7DACFB9CC896D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KYDrawerController;
+			target = 7AF8670FDECF80EFCAA3D04318C4B4D1 /* KYDrawerController */;
+			targetProxy = D76134F5427D12915432D1693D378A8E /* PBXContainerItemProxy */;
+		};
+		E46756BEC42F3D2D4C718A33CB31B599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "XLPagerTabStrip-XLPagerTabStrip";
+			target = 1087BC19BD08E294E079A9BFE72DEB72 /* XLPagerTabStrip-XLPagerTabStrip */;
+			targetProxy = 70A7342EA0FB0A79F7A272F8870AF06A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		224F4330DCEEA8A93802A39B270DBE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		47AB73E6EF39FCA649708A72F869C6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADECBCBF59067F3E98D45698767EE33 /* KYDrawerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KYDrawerController/KYDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYDrawerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYDrawerController/KYDrawerController.modulemap";
+				PRODUCT_MODULE_NAME = KYDrawerController;
+				PRODUCT_NAME = KYDrawerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		538B70B4776DD9D672F8BEEDC551BAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ADECBCBF59067F3E98D45698767EE33 /* KYDrawerController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KYDrawerController/KYDrawerController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KYDrawerController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KYDrawerController/KYDrawerController.modulemap";
+				PRODUCT_MODULE_NAME = KYDrawerController;
+				PRODUCT_NAME = KYDrawerController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D7E3B3A91D8F6D0E847FCC5D47ECC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE3F12D5AE2B9D99F9447B9AEF5AE5B7 /* Pods-Aldyabe.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aldyabe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aldyabe/Pods-Aldyabe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A97A502330C4A4516483C43800A934C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B67D7D7E715B3F1862D50BD38CE8C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XLPagerTabStrip/XLPagerTabStrip.modulemap";
+				PRODUCT_MODULE_NAME = XLPagerTabStrip;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB96F094B9B8BF0CF01A6CD78063B834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B157D22A3F4D71940FCBD11461E26E3 /* XLPagerTabStrip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/XLPagerTabStrip";
+				INFOPLIST_FILE = "Target Support Files/XLPagerTabStrip/ResourceBundle-XLPagerTabStrip-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = XLPagerTabStrip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FAEE331976F1C659345740FE8E56EE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF290E7825D58328F33FA3B262AEBF4 /* Pods-Aldyabe.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Aldyabe/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Aldyabe/Pods-Aldyabe.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235787AAA4D655650FA93DB4FB2D308A /* Build configuration list for PBXNativeTarget "KYDrawerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538B70B4776DD9D672F8BEEDC551BAF4 /* Debug */,
+				47AB73E6EF39FCA649708A72F869C6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
+				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		697D3619CF02F3619A527E8C6D934B10 /* Build configuration list for PBXNativeTarget "XLPagerTabStrip-XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB96F094B9B8BF0CF01A6CD78063B834 /* Debug */,
+				224F4330DCEEA8A93802A39B270DBE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD841337C35FCD76EB25A02A2C67B84B /* Build configuration list for PBXNativeTarget "XLPagerTabStrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A97A502330C4A4516483C43800A934C /* Debug */,
+				8B67D7D7E715B3F1862D50BD38CE8C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3CA5854E2D84DA7BED142B966D53BA /* Build configuration list for PBXNativeTarget "Pods-Aldyabe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEE331976F1C659345740FE8E56EE0D /* Debug */,
+				7D7E3B3A91D8F6D0E847FCC5D47ECC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
