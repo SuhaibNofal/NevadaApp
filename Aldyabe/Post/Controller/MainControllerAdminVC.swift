@@ -178,7 +178,7 @@ func parserDidEndDocument(_ parser: XMLParser)
             vc.name = y!
         }else if (segue.identifier == "CustomerInfo"){
             let vc = segue.destination as! ContainerViewController
-            vc.CustomerNum = z
+            vc.CustomerNum = z!
             
             
             

@@ -1,42 +1,45 @@
 //
-//  Child3_DeletionInformationVC.swift
+//  ContainerVCService.swift
 //  Aldyabe
 //
-//  Created by nofal on 10/09/2018.
+//  Created by nofal on 23/09/2018.
 //  Copyright © 2018 Nofal. All rights reserved.
 //
 
 import UIKit
-import XLPagerTabStrip
 
-class Child3_DeletionInformationVC: UIViewController ,XMLParserDelegate,NSURLConnectionDataDelegate{
-@IBOutlet weak var imageBack: UIImageView!
-    @IBOutlet weak var laCountryData: UILabel!
-    @IBOutlet weak var laCityData: UILabel!
-    @IBOutlet weak var laPhoneData: UILabel!
-    @IBOutlet weak var laOfficeData: UILabel!
-    @IBOutlet weak var laAddressData: UILabel!
-    @IBOutlet weak var laEmailData: UILabel!
-    var CustomerNum :String?
-    var mutableData :NSMutableData?
-    var parser = XMLParser()
-    var ArrayCustomerInfo = [String]()
-    var captureData = ""
-    var suhaib = ""
+class ContainerVCService: UIViewController,NSURLConnectionDataDelegate,XMLParserDelegate {
+     var CustomerNum : String?
+     var captureData = ""
+     var mutableData :NSMutableData?
+     var parser = XMLParser()
+     var suhaib : String = ""
+     var ArrayCustomerInfo = [String]()
+     var CustomerNameAr : String = ""
+     var CustomerNameEn : String = ""
+     var AccountNumber : String = ""
+     var Country : String = ""
+     var City : String = ""
+     var AccStartBalance : String = ""
+     var AccDate : String = ""
+     var AccTranType : String = ""
+     var AccPhoneNum : String = ""
+     var AccPoBox : String = ""
+     var AccAdress : String = ""
+     var Email : String = ""
+     var AccCusMax : String = ""
+     var AccChekMax : String = ""
+     var AccMaxOk : String = ""
+     var iisMaxOk = false
+    var Child : String = ""
     
-    var Country : String = ""
-    var City : String = ""
-    var AccPhoneNum : String = ""
-    var AccPoBox : String = ""
-    var AccAdress : String = ""
-    var Email : String = ""
+    
     override func viewDidLoad() {
-        ImageGradint(imageback: imageBack).backimage1()
-        loadCustomerInfo()
         super.viewDidLoad()
 
-    }
-    func loadCustomerInfo() ->Bool{
+        
+            }
+    func loadCustomerInfo( Custmer : String) ->Bool{
         let soapMessage = String(format :"<?xml version='1.0' encoding='utf-8'?><soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'><soap:Body><getCustomerInfo xmlns='http://37.224.24.195'><C_No>%@</C_No></getCustomerInfo></soap:Body></soap:Envelope>",CustomerNum!)
         
         let urlString = "http://37.224.24.195/AndroidWS/GetInfo.asmx?op=getCustomerInfo"
@@ -94,48 +97,26 @@ class Child3_DeletionInformationVC: UIViewController ,XMLParserDelegate,NSURLCon
         
     }
     func parser(_ parser: XMLParser, foundCharacters string: String)
-    {
-        if captureData == "string"
-        {
-            suhaib+=string
+    {   if captureData == "string"{
+        suhaib+=string
         }
+        
         
     }
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
     {
         if elementName == "string"{
             ArrayCustomerInfo.append(suhaib)
-            
+            //print(ArrayCustomerInfo)
         }
         
     }
     func parserDidEndDocument(_ parser: XMLParser)
     {
-        laCountryData.text = ArrayCustomerInfo[12]
-        laCityData.text = ArrayCustomerInfo[11]
-        laPhoneData.text = ArrayCustomerInfo [3]
-        if ArrayCustomerInfo[8] == ""{
-            laEmailData.text = "-"
-        }else{
-            laEmailData.text = ArrayCustomerInfo[8]
-        }
-        if ArrayCustomerInfo[4] == ""{
-            laOfficeData.text = "-"
-        }else{
-            laEmailData.text = ArrayCustomerInfo[4]
-        }
-        if ArrayCustomerInfo[5] == ""{
-            laAddressData.text = "-"
-        }else{
-            laAddressData.text = ArrayCustomerInfo[5]
-        }
         
-                
+        
+        
+        
     }
-
-}
-extension Child3_DeletionInformationVC : IndicatorInfoProvider{
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "معلومات العميل")
+    
     }
-}

@@ -10,7 +10,7 @@ import UIKit
 import XLPagerTabStrip
 class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDelegate,NSURLConnectionDataDelegate {
     let blueInstagramColor = UIColor(red: 37/255.0, green: 111/255.0, blue: 206/255.0, alpha: 1.0)
-    var CustomerNum : String?
+    var CustomerNum : String = ""
     var captureData = ""
     var mutableData :NSMutableData?
     var parser = XMLParser()
@@ -32,35 +32,37 @@ class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDe
     var AccChekMax : String = ""
     var AccMaxOk : String = ""
     var iisMaxOk = false
+    var ChildType = ""
     
     @IBOutlet weak var laCustomerNameAr: UILabel!
+    let Child_1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_1")as! Child_CustomerInformation
     
     @IBOutlet weak var laCustomerNameEn: UILabel!
     override func viewDidLoad() {
-        
-    
         LoadDisgin()
-        
-        loadCustomerInfo()
+        ChildType = "1"
+       var result =  loadCustomerInfo()
+        if result == false{
+            return
+        }
         super.viewDidLoad()
-
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let Child_1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_1")as! Child_CustomerInformation
-        Child_1.CustomerNum = CustomerNum
         
         
+        let Child_2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_2")as! Child2_AccontInformationVC
+        Child_2.CustomerNum = CustomerNum
         
+        let Child_3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_3") as!Child3_DeletionInformationVC
+        Child_3.CustomerNum = CustomerNum
         
-        let Child_2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_2")
-        let Child_3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_3")
         return [Child_1,Child_2,Child_3]
     }
     func LoadDisgin(){
         settings.style.buttonBarBackgroundColor = .black
         settings.style.buttonBarItemBackgroundColor = .blue
         settings.style.selectedBarBackgroundColor = .white
-        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
+        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 10)
         settings.style.selectedBarHeight = 2.0
         settings.style.buttonBarMinimumLineSpacing = 0
         settings.style.buttonBarItemTitleColor = .white
@@ -74,8 +76,8 @@ class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDe
             newCell?.label.textColor = .white
         }
     }
-    func loadCustomerInfo() ->Bool{
-        let soapMessage = String(format :"<?xml version='1.0' encoding='utf-8'?><soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'><soap:Body><getCustomerInfo xmlns='http://37.224.24.195'><C_No>%@</C_No></getCustomerInfo></soap:Body></soap:Envelope>",CustomerNum!)
+    func loadCustomerInfo( ) ->Bool{
+        let soapMessage = String(format :"<?xml version='1.0' encoding='utf-8'?><soap:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'><soap:Body><getCustomerInfo xmlns='http://37.224.24.195'><C_No>%@</C_No></getCustomerInfo></soap:Body></soap:Envelope>",CustomerNum)
         
         let urlString = "http://37.224.24.195/AndroidWS/GetInfo.asmx?op=getCustomerInfo"
         let url = URL(string: urlString)
@@ -89,8 +91,10 @@ class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDe
         connection?.start()
         if connection != nil{
             return true
-        }else{print("dd")}
-        return true
+        }else{
+            return false
+        }
+        
     }
     func connection(_ connection: NSURLConnection, didFailWithError error: Error)
     {
@@ -114,6 +118,9 @@ class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDe
         parser.delegate = self
         if parser.parse(){
             
+        }
+        else{
+            return
         }
     }
     
@@ -150,29 +157,34 @@ class ContainerViewController: ButtonBarPagerTabStripViewController ,XMLParserDe
     {
         laCustomerNameAr.text = ArrayCustomerInfo[1]
         laCustomerNameEn.text = ArrayCustomerInfo[2]
-        print(ArrayCustomerInfo[0])
-        print(ArrayCustomerInfo[1])
-        print(ArrayCustomerInfo[2])
-        print(ArrayCustomerInfo[3])
-        print(ArrayCustomerInfo[4])
-        print(ArrayCustomerInfo[5])
-        print(ArrayCustomerInfo[6])
-        print(ArrayCustomerInfo[7])
-        print(ArrayCustomerInfo[8])
-        print(ArrayCustomerInfo[9])
-        print(ArrayCustomerInfo[10])
-        print(ArrayCustomerInfo[11])
-        print(ArrayCustomerInfo[12])
-        print(ArrayCustomerInfo[13])
-        print(ArrayCustomerInfo[14])
-        print(ArrayCustomerInfo[15])
-        print(ArrayCustomerInfo[16])
-        print(ArrayCustomerInfo[17])
-        //let Child_1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "child_1")as! Child_CustomerInformation
-        //Child_1.laTransType.text = ArrayCustomerInfo[0]
+        Child_1.CustomerNum = CustomerNum
+        Child_1.laAccountNumber.text = ArrayCustomerInfo[6]
+        var totalVale1 : Double = Double(ArrayCustomerInfo[0])!
+        var tranCredit = ""
+        if (totalVale1 < 0){
+            totalVale1 = totalVale1 * -1
+            Child_1.laEndBalance.textColor = .red
+            tranCredit = String(format: "%.2f", totalVale1)
+            Child_1.laEndBalance.text = "(\(tranCredit))"
+        }else{Child_1.laEndBalance.text = ArrayCustomerInfo[0]}
         
+        Child_1.lDateCreateAccount.text = ArrayCustomerInfo[7]
+        Child_1.laStartBalance.text = ArrayCustomerInfo[13]
+        if (ArrayCustomerInfo[14] == "1")
+        {
+            Child_1.laTransType.text = "مدين"
+        }else if (ArrayCustomerInfo[14] == "2"){
+            Child_1.laTransType.text = "دائن"
+        }
+        else {
+            Child_1.laTransType.text = "مدين ودائن "
+        }
+        AccMaxOk = ArrayCustomerInfo[15]
+        AccCusMax = ArrayCustomerInfo[16]
+        AccChekMax = ArrayCustomerInfo[17]
         
     }
     
+    }
+    
 
-}

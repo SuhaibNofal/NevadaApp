@@ -13,6 +13,9 @@ class NetWorkServices:UIViewController,XMLParserDelegate,NSURLConnectionDataDele
     var mutablData = NSMutableData()
     var parser = XMLParser()
     var arrayDaily = [DailyTrans]()
+    
+    
+   
     func loadData(soapMessage : String , url:String ){
     let urlString = url
     let url = URL(string: urlString)

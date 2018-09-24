@@ -32,7 +32,7 @@ class Child_CustomerInformation: UIViewController,XMLParserDelegate,NSURLConnect
     override func viewDidLoad() {
         ImageGradint(imageback: imageBack).backimage1()
         
-        loadCustomerInfo()
+       // loadCustomerInfo()
        
         super.viewDidLoad()
         
